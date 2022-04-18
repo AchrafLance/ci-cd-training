@@ -16,3 +16,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  anotha-action:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world"
+      - run: echo "hello otha action"
+
