@@ -28,4 +28,8 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('ci-cd-training app is running!');
   });
+
+  it("should fail", ()=>{
+    fail()
+  })
 });
